@@ -1,0 +1,17 @@
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: aliceblue;
+    text-align: center;
+}
+  
+#todo-list {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}

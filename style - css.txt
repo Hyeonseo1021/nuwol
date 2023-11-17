@@ -1,0 +1,18 @@
+style - css
+animation - javascript
+h1.className = getter&setter
+
+
+methods
+정렬된데이터들의집합
+list - [data1, data2, ...]
+method - 데이터 뒤에 결합/연결된 function
+method와 function은 호출 방식에 차이가 있다.
+리스트의 장점
+- 메소드를 쓸 수 있다. - 생산적
+- 데이터 변경 간편
+
+tuple - (data1, data2, ...)
+- 불변성
+
+dictionary - {key : value,}
