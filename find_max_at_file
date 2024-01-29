@@ -1,0 +1,11 @@
+with open("numbers.txt", 'r') as numbers:
+    find_max = []
+    
+    for number in numbers:
+        number = int(number.strip("\n"))
+        find_max.append(number)
+        max_num = find_max[0]
+        for num in find_max:
+            if num > max_num:
+                max_num = num
+    print("최대값 :", max_num)
