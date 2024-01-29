@@ -1,0 +1,13 @@
+numbers = [1, 2, 3, 4, 5, 2, 7, 8, 4, 10]
+
+# 중복된 숫자 찾기
+duplicates = {}
+for number in numbers:
+    if number in duplicates:
+        duplicates[number] += 1
+    else:
+        duplicates[number] = 1
+
+# 결과 출력
+result = [key for key, value in duplicates.items() if value > 1]
+print("중복된 숫자:", result)
