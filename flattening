@@ -1,0 +1,16 @@
+nested_list = [1, [2, [3, 4], 5], 6, [[7], 8]]
+flattened_list = []
+
+for i in nested_list:
+    if type(i) is list:
+        for j in i:
+            if type(j) is list:
+                for k in j:
+                    flattened_list.append(k)
+            else:
+                flattened_list.append(j)
+    else:
+        flattened_list.append(i)
+       
+
+print(flattened_list)
