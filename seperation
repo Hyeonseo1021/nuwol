@@ -1,0 +1,19 @@
+even = []
+odd = []
+
+while True:
+    number = int(input("숫자를 입력하세요 (0 입력 시 종료): "))
+    try:
+        if number == 0:
+            break
+        else:
+            if number % 2 == 0:
+                even.append(number)
+            else:
+                odd.append(number)
+        
+    except:
+        print("숫자를 입력해주세요.")
+
+print("입력된 숫자 중 짝수: {}".format(even))
+print("입력된 숫자 중 홀수: {}".format(odd))
