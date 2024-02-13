@@ -1,0 +1,13 @@
+import requests
+from bs4 import BeautifulSoup
+
+web_scraping = []
+url = "https://en.wikipedia.org/wiki/Web_scraping"
+response = requests.get(url)
+soup = BeautifulSoup(response.content, "html.parser")
+infos = soup.find("div", class_="mw-content-container")
+title = infos.find("span", class_="mw-page-title-main")
+explain = infos.find("div", class_="mw-content-ltr").find_all("p")[0]
+web_scraping.append(title.text)
+web_scraping.append(explain.text.strip())
+print(web_scraping)
